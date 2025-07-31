@@ -1,0 +1,13 @@
+prefix=c:/Users/wasia/Desktop/Data Science/Streamlit/conda_env/Library
+exec_prefix=c:/Users/wasia/Desktop/Data Science/Streamlit/conda_env/Library
+libdir=c:/Users/wasia/Desktop/Data Science/Streamlit/conda_env/Library/lib
+sharedlibdir=c:/Users/wasia/Desktop/Data Science/Streamlit/conda_env/Library/lib
+includedir=c:/Users/wasia/Desktop/Data Science/Streamlit/conda_env/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
