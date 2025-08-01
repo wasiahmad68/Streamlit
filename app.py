@@ -94,15 +94,12 @@ def load_investor_details(investor):
 
 st.sidebar.title('Startup Funding Analysis')
 
-option = st.sidebar.selectbox('Select One',['Overall Analysis','StartUp','Investor'])
+option = st.sidebar.selectbox('Select One',['Overall Analysis','Investor'])
 
 if option == 'Overall Analysis':
     load_overall_analysis()
 
-elif option == 'StartUp':
-    st.sidebar.selectbox('Select StartUp',sorted(df['startup'].unique().tolist()))
-    btn1 = st.sidebar.button('Find StartUp Details')
-    st.title('StartUp Analysis')
+
 else:
     selected_investor = st.sidebar.selectbox('Select StartUp',sorted(set(df['investors'].str.split(',').sum())))
     btn2 = st.sidebar.button('Find Investor Details')
